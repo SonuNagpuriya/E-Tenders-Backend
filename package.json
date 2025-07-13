@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "type": "module",
-  "scripts": {
-    "dev": "nodemon --exec babel-node"
-  },
+ "scripts": {
+  "start": "node app.js",
+  "dev": "nodemon --exec babel-node"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
