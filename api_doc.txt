@@ -1,0 +1,103 @@
+User management API links :-
+
+base url : http://localhost:3001/user/ 
+
+-> insert api link
+
+url : http://localhost:3001/user/save
+method : post
+data : in form of params (req.body) post method   
+
+name , email , password , mobile , address , city , gender
+
+-----------------------------------------------------------
+
+-> fetch api link
+
+url : http://localhost:3001/user/fetch/
+method : get
+
+data : query string must be attached to find specific data
+
+fields : key 
+value : data to be fetched
+
+------------------------------------------------------
+
+
+* to delete record from database
+
+resource url : https://reqbin.com/Article/HttpDelete
+
+url : http://localhost:3001/user/delete/
+method : delete
+
+data attached : if required condition object (url params or body)
+
+response : json
+
+-------------------------------------------------------
+
+* to update record from database
+
+resource url : https://www.geeksforgeeks.org/difference-between-put-and-patch-request/
+
+url : http://localhost:3001/user/update/
+method : patch
+
+data attached : if required object is to be added which holds both(condion object + data to be updated)
+
+req data : {"condition_obj":{},"content_obj":{}}
+response : json
+
+-------------------------------------------------------
+
+* to make login from database
+
+url : http://localhost:3001/user/login/
+method : post
+
+data attached : email & password (in body)
+
+response : json
+
+-------------------------------------------------------
+-------------------------------------------------------
+
+
+Category management API links :-
+
+-> insert api link
+
+url : http://localhost:3001/category/save
+method : post
+data : in form of params (req.body) post method   
+
+catnm , caticonnm
+
+-----------------------------------------------------------
+
+-> fetch api link
+
+url : http://localhost:3001/category/fetch/
+method : get
+
+data : query string must be attached to find specific data
+
+fields : key 
+value : data to be fetched
+
+------------------------------------------------------
+
+* to delete record from database
+
+url : http://localhost:3001/category/delete/
+method : delete
+
+data attached : if required condition object (url params or body)
+
+response : json
+
+-----------------------------------------------------------
+
+
