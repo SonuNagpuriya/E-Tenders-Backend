@@ -17,6 +17,11 @@ app.use(fileUpload());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+// 👇 Root route added for healthcheck
+app.get('/', (req, res) => {
+  res.send('🎉 E‑Tenders Backend is live!');
+});
+
 // route mounts
 app.use('/user',        UserRouter);
 app.use('/category',    CategoryRouter);
@@ -26,4 +31,4 @@ app.use('/bid',         BidRouter);
 
 // dynamic port for cloud hosts
 const PORT = process.env.PORT || 3001;
-app.listen(PORT, () => console.log(`✅  Server running on port ${PORT}`));
+app.listen(PORT, () => console.log(`✅ Server running on port ${PORT}`));
